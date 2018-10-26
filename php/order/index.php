@@ -2,8 +2,9 @@
 session_start();
 require_once('../../config/db.config.php');
 $id_cliente = $_SESSION['id'];
-$endereco = ($_POST['rua'].' '.$_POST['numero'].', '.$_POST['bairro'].' - '.$_POST['cidade'].' - '.$_POST['uf'].' / '.$_POST['cep']);
+$endereco = ($_POST['rua'].', '.$_POST['numero'].', '.$_POST['bairro'].' - '.$_POST['complemento'].' - '.$_POST['cidade'].' - '.$_POST['cep']);
 $pagamento = $_POST['pagamento'];
+$total = $_POST['total'];
 
 $dbConnection = new ConfigDb();
 $link = $dbConnection->connectDb();

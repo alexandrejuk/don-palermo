@@ -4,8 +4,7 @@ session_start();
 require_once('../../config/db.config.php');
 
 $usuario  = $_POST['usuario'];
-$password = md5($_POST['senha']);
-
+$password = MD5($_POST['senha']);
 
 $dbConnection = new ConfigDb();
 $link = $dbConnection->connectDb();

@@ -41,14 +41,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="icon" id="palermoicon" href="../img/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link rel="stylesheet" href="./../css/styles.css">
     <style type="text/css">
       body {
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Exo', sans-serif;
         background-image: url("../css/fundo157.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -77,8 +75,7 @@
           <ul id="barra" class="nav navbar-nav navbar-right navbar-collapse">
             <li ><a href="../area-cliente-pizzas/index.php"  id="nome2"><font color="green">Pizzas</font></a></li>
             <li ><a href="./index.php" id="nome2"  class="active"><font color="green">Bebidas</font></a></li>
-            <li ><a href="../pedidos/index.php" id="nome2"><font color="red">Pedidos</font></a></li>
-            <li ><a href="../carrinho/index.php" id="nome2" ><font color="red">Carinho</font></a></li>
+            <li ><a href="../carrinho/index.php" id="nome2" ><font color="red">Carrinho</font></a></li>
             <li ><a href="../php/loggout/index.php" id="nome2"><font color="red">Sair</font></a></li>
           </ul>
           <p class="text-white">
@@ -114,17 +111,17 @@
   <div class="row">
     <div class="col-md-2">
       <div class="link-area">
-        <h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Cardápio</a></font></h3>
+      <h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Pizzas</a></font></h3>
       </div>
     </div>
     <div class="col-md-2">
       <div class="link-area">
-        <!-- <h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Cardápio</a></font></h3> -->
+        <h3><a href="../area-cliente-bebidas/index.php" id="footertext"><font color="white">Bebidas</a></font></h3>
       </div>
     </div>
     <div class="col-md-2">
       <div class="link-area">
-        <!-- <h3><a href="../login/index.php" id="footertext"><font color="white">Cliente</a></font></h3> -->
+        <h3><a href="../pedidos/index.php" id="footertext"><font color="white">Pedidos</a></font></h3>
       </div>
     </div>
     <div class="col-md-6">

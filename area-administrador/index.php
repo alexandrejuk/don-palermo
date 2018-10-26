@@ -7,7 +7,6 @@
 
 ?>
 
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -23,7 +22,7 @@
     <style type="text/css">
       body {
         font-family: 'Montserrat Alternates', sans-serif;
-        background-image: url("../css/fundo-login.jpg");
+        background-image: url("../css/fundoadm.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -46,9 +45,9 @@
 
       <ul id="barra" class="nav navbar-nav navbar-right navbar-collapse">
         <li ><a href="../index.html" id="nome1"><font color="green">Home</font></a></li>
-        <li ><a href="../pizzas/index.php" id="nome2"><font color="green">Pizzas</font></a></li>
-        <li ><a href="../bebidas/index.php" id="nome2"><font color="white">Bebidas</font></a></li>
-        <li ><a href="../login/index.php" id="nome2" class="active"><font color="red">Área do Cliente</font></a></li>
+        <li ><a href="../pizzas/index.html" id="nome2"><font color="green">Pizzas</font></a></li>
+        <li ><a href="../bebidas/index.html" id="nome2"><font color="white">Bebidas</font></a></li>
+        <li ><a href="../login/index.php" id="nome2"><font color="red">Área do Cliente</font></a></li>
         <li ><a href="../sobre/index.html" id="nome2"><font color="red">Sobre</font></a></li>
       </ul>
     </nav>
@@ -56,9 +55,9 @@
 
     <!-- form login -->
     <div class="form-login-content">
-      <h1><font color="Green">Area </font><font color=White>do </font><font color="Red">Cliente</font></h1>
+      <h1><font color="White">Area do Admin</font></h1>
     
-      <form action="../php/auth/index.php" method="post">
+      <form action="../administrador-login/index.php" method="post">
         
           <div class="form-login">
             <label for="username">Digite o seu usuário:</label>
@@ -68,7 +67,6 @@
           <div class="form-login">
             <label for="username">Digite sua senha:</label>
             <input placeholder="Senha" name="senha" type="password" />
-            <a class="sub-title-form" href="../cadastro/index.html">Cadastrar-se</a>
           </div>
 
           <div class="form-button text-right">

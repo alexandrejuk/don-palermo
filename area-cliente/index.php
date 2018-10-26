@@ -46,8 +46,7 @@
       <ul id="barra" class="nav navbar-nav navbar-right navbar-collapse">
         <li ><a href="../area-cliente-pizzas/index.php" id="nome2"><font color="green">Pizzas</font></a></li>
         <li ><a href="../area-cliente-bebidas/index.php" id="nome2"><font color="white">Bebidas</font></a></li>
-        <li ><a href="../pedidos/index.php" id="nome2"><font color="red">Pedidos</font></a></li>
-        <li ><a href="../carrinho/index.php" id="nome2" ><font color="red">Carinho</font></a></li>
+        <li ><a href="../carrinho/index.php" id="nome2" ><font color="red">Carrinho</font></a></li>
         <li ><a href="../php/loggout/index.php" id="nome2"><font color="red">Sair</font></a></li>
       </ul>
       <p class="text-white">
@@ -63,9 +62,9 @@
       <div class="col-12">
         <h1 id="TituloS2"><font color="white">Area do Cliente</font><h1>
       </div>
-
      
-
+    
+    
     </div>
     <!-- lista de pizza -->
 
@@ -75,19 +74,19 @@
 			<div class="row">
 				<div class="col-md-2">
 					<div class="link-area">
-						<h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Cardápio</a></font></h3>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="link-area">
-						<!-- <h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Cardápio</a></font></h3> -->
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="link-area">
-						<!-- <h3><a href="../login/index.php" id="footertext"><font color="white">Cliente</a></font></h3> -->
-					</div>
-				</div>
+          <h3><a href="../area-cliente-pizzas/index.php" id="footertext"><font color="white">Pizzas</a></font></h3>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="link-area">
+        <h3><a href="../area-cliente-bebidas/index.php" id="footertext"><font color="white">Bebidas</a></font></h3>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="link-area">
+        <h3><a href="../pedidos/index.php" id="footertext"><font color="white">Pedidos</a></font></h3>
+      </div>
+    </div>
 				<div class="col-md-6">
 					<div id="link-area1">
 						<h5><font color="white">Av. Pereira Barreto, 400 - Baeta Neves, SBC, 09751-000</font></h5>

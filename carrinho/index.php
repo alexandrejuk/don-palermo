@@ -76,8 +76,7 @@
           <ul id="barra" class="nav navbar-nav navbar-right navbar-collapse">
             <li ><a href="../area-cliente-pizzas/index.php"  id="nome2"><font color="green">Pizzas</font></a></li>
             <li ><a href="../area-cliente-bebidas/index.php" id="nome2" ><font color="white">Bebidas</font></a></li>
-            <li ><a href="../pedidos/index.php" id="nome2" ><font color="red">Pedidos</font></a></li>
-            <li ><a href="./index.php" id="nome2" class="active"><font color="red">Carinho</font></a></li>
+            <li ><a href="./index.php" id="nome2" class="active"><font color="red">Carrinho</font></a></li>
             <li ><a href="../php/loggout/index.php" id="nome2"><font color="red">Sair</font></a></li>
           </ul>
           <p class="text-white">
@@ -175,7 +174,7 @@
               <th scope="row" name="id_produto"><?php echo($produto['id']); ?></th>
               <th scope="row" ><?php echo($produto['descricao']); ?></th>
               <td class="text-center"><input class="input-qtd" type="number" value="1" min="1" name="quantidade"></td>
-              <td class="text-center" name="preco">R$ <?php echo($produto['preco']); ?></td>
+              <td class="text-center" name="precos">R$ <?php echo($produto['preco']); ?></td>
               <td class="text-center">R$  <?php echo($produto['preco'] * 1 ); ?></td>
             </tr>
             <?php endforeach; ?> 
@@ -184,7 +183,7 @@
       </div>
 
       <div class="col-md-12">
-        <h2 class="text-white text-right">Total R$  <?php echo(array_sum(array_column($produtos, 'preco'))); ?></h2>
+        <h2 class="text-white text-right" name="total">Total R$  <?php echo(array_sum(array_column($produtos, 'preco'))); ?></h2>
       </div>
 
        

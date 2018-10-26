@@ -27,6 +27,17 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `clientes`
 --
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `usuario` varchar(12) NOT NULL,
+  `senha` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `admin` (`id`, `nome`, `email`, `usuario`, `senha`) VALUES
+(1, 'Admin', 'admin@gmail.com', 'admin', '21232f297a57a5a743894a0e4a801fc3');
+
 
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
@@ -90,28 +101,27 @@ INSERT INTO `produtos` (`id`, `descricao`, `imagem`, `preco`, `categoria`) VALUE
 (1, 'PEPPERONI', 'pepperoni.png', 29.99, 'PIZZA'),
 (2, 'MUSSARELA', 'mussarela.png', 19.99, 'PIZZA'),
 (3, 'CALABRESA', 'calabresa.png', 19.99, 'PIZZA'),
-(4, 'VEGANA', 'mussarela.png', 19.99, 'PIZZA'),
-(5, 'PORTUGUESA', 'portuguesa.png', 24.99, 'PIZZA'),
-(6, '4 QUEIJOS', 'quatro-queijo.png', 29.99, 'PIZZA'),
-(7, 'TOSCANA', 'toscana.png', 29.99, 'PIZZA'),
-(8, 'MARGHERITA', 'margherita.png', 29.99, 'PIZZA'),
-(9, 'CORN & BACON', 'corn-bacon.png', 34.99, 'PIZZA'),
-(10, 'FRANGO C CHEDDAR', 'frango-cheddar.png', 34.99, 'PIZZA'),
-(11, 'BACON', 'bacon.png', 29.99, 'PIZZA'),
-(12, 'CARNE SECA', 'carne-seca.png', 29.99, 'PIZZA'),
-(13, 'PALMITO', 'palmito.png', 24.99, 'PIZZA'),
-(14, 'VEGANA', 'vegana.png', 29.99, 'PIZZA'),
-(15, 'FRANGO C CATUPIRY', 'frango-catupiry.png', 34.99, 'PIZZA'),
-(16, 'ATUM', 'atum.png', 29.99, 'PIZZA'),
-(17, 'COCA COLA 2L', 'coca-cola.png', 11.99, 'BEBIDA'),
-(18, 'SPRITE 2L', 'sprite.png', 9.99, 'BEBIDA'),
-(19, 'GUARANÁ 2L', 'guarana-antarctica.png', 11.99, 'BEBIDA'),
-(20, 'PEPSI 2L', 'pepsi.png', 10.99, 'BEBIDA'),
-(21, 'FANTA LARANJA 2L', 'fanta-laranja.png', 9.99, 'BEBIDA'),
-(22, 'FANTA UVA 2L', 'fanta-uva.png', 9.99, 'BEBIDA'),
-(23, 'ITUBAÍNA 2L', 'itubaina.png', 8.99, 'BEBIDA'),
-(24, 'DOLLY LIMÃO 2L', 'dolly-limao.png', 7.99, 'BEBIDA'),
-(25, 'DOLLY COLA 2L', 'dolly-cola.png', 7.99, 'BEBIDA');
+(4, 'PORTUGUESA', 'portuguesa.png', 24.99, 'PIZZA'),
+(5, '4 QUEIJOS', 'quatro-queijo.png', 29.99, 'PIZZA'),
+(6, 'TOSCANA', 'toscana.png', 29.99, 'PIZZA'),
+(7, 'MARGHERITA', 'margherita.png', 29.99, 'PIZZA'),
+(8, 'CORN & BACON', 'corn-bacon.png', 34.99, 'PIZZA'),
+(9, 'FRANGO C CHEDDAR', 'frango-cheddar.png', 34.99, 'PIZZA'),
+(10, 'BACON', 'bacon.png', 29.99, 'PIZZA'),
+(11, 'CARNE SECA', 'carne-seca.png', 29.99, 'PIZZA'),
+(12, 'PALMITO', 'palmito.png', 24.99, 'PIZZA'),
+(13, 'VEGANA', 'vegana.png', 29.99, 'PIZZA'),
+(14, 'FRANGO C CATUPIRY', 'frango-catupiry.png', 34.99, 'PIZZA'),
+(15, 'ATUM', 'atum.png', 29.99, 'PIZZA'),
+(16, 'COCA COLA 2L', 'coca-cola.png', 11.99, 'BEBIDA'),
+(17, 'SPRITE 2L', 'sprite.png', 9.99, 'BEBIDA'),
+(18, 'GUARANÁ 2L', 'guarana-antarctica.png', 11.99, 'BEBIDA'),
+(19, 'PEPSI 2L', 'pepsi.png', 10.99, 'BEBIDA'),
+(20, 'FANTA LARANJA 2L', 'fanta-laranja.png', 9.99, 'BEBIDA'),
+(21, 'FANTA UVA 2L', 'fanta-uva.png', 9.99, 'BEBIDA'),
+(22, 'ITUBAÍNA 2L', 'itubaina.png', 8.99, 'BEBIDA'),
+(23, 'DOLLY LIMÃO 2L', 'dolly-limao.png', 7.99, 'BEBIDA'),
+(24, 'DOLLY COLA 2L', 'dolly-cola.png', 7.99, 'BEBIDA');
 
 --
 -- Indexes for dumped tables
